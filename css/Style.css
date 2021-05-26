@@ -501,17 +501,23 @@ p.estilo-2::first-letter{
     grid-template-rows: repeat(2,200px);
 }
 .gal{
+    width: 100%;
+    display: grid;
+    margin-bottom: 20px;
     padding-top: 100px; 
     padding-bottom: 50px; 
     grid-template-columns: repeat(5, 20%); 
     grid-template-rows: repeat(2,200px)
 }
-.gallery-container .gallery-card{overflow: hidden};
-.gallery-container .gallery-card a{
+.gallery-container .gallery-card,
+.gal .gallery-card{overflow: hidden};
+.gallery-container .gallery-card a,
+.gal .gallery-card a{
     width: 100%;
     height:100%;
 }
-.gallery-container .gallery-card a > img{
+.gallery-container .gallery-card a > img,
+.gal .gallery-card a > img{
     width: 100%;
     height: 100%;
     object-fit: cover;
