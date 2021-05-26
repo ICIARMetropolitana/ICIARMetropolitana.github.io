@@ -73,24 +73,24 @@ title{
 .nav1{
     float:left;
 }
-.nav > li{
+.nav > li,.navG > li{
     float:left;
     text-align: center;
 }
-.nav{
+.nav,.navG{
     float:right;
 }
 ul, ol{
     list-style:none;
 }
-.nav li a{
+.nav li a,.navG li a{
     background-color:rgb(29, 29, 29); 
     color:rgba(240, 255, 255, 0.733);
     text-decoration:none;
     padding:10px 12px;
     display:block;
 }
-.nav li a:hover{
+.nav li a:hover,.navG li a:hover{
     background-color:#CCC;
     color: black;
 }
@@ -102,7 +102,7 @@ ul, ol{
 .nav li:hover > ul{
     display:block;
 }
-    .nav li ul li {
+.nav li ul li {
     position:relative;
 }
 #btn-menu{
