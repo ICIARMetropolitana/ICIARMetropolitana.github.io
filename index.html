@@ -592,10 +592,10 @@
                         <a href="Images/fotos/1.jpg" data-lightbox="roadtrip"><img src="Images/fotos/1.jpg" alt="Imagen"></a>
                     </div>
                     <div class="gallery-card">
-                        <a href="Images/fotos/135.JPG" data-lightbox="roadtrip"><img src="Images/fotos/135.JPG" alt="Imagen"></a>
+                        <a href="Images/fotos/135.JPG" data-lightbox="roadtrip"><img src="Images/fotos/135.jpg" alt="Imagen"></a>
                     </div>
                     <div class="gallery-card">
-                        <a href="Images/fotos/136.JPG" data-lightbox="roadtrip"><img src="Images/fotos/136.JPG" alt="Imagen"></a>
+                        <a href="Images/fotos/136.JPG" data-lightbox="roadtrip"><img src="Images/fotos/136.jpg" alt="Imagen"></a>
                     </div>
                     <div class="gallery-card">
                         <a href="Images/fotos/42.jpg" data-lightbox="roadtrip"><img src="Images/fotos/42.jpg" alt="Imagen"></a>
@@ -615,7 +615,7 @@
             <!--Recursos-->
             <div id="recursos" class="cuadro2"> 
                 <h3><center>Descargar</center></h3>
-                <center><h2 class="px">Planificacion De Actividades <a class="boton" href="PDF/PlanificacionDeActividades.docx" download="PlanificacionDeActividades" target="_blank">Descargar</a></h2></center>
+                <center><h2 class="px">Planificacion De Actividades <a class="boton" href="PDF/PlanificacionDeActividades.pdf" download="PlanificacionDeActividades" target="_blank">Descargar</a></h2></center>
                 <br></br>
                 <div class="tam4">
                     <table class="width200">
@@ -739,7 +739,14 @@
             </div>
         </header>
 
-        
+    <!-- Messenger plugin de chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your plugin de chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    
         <!--Pie de pagina-->
         <footer>
             <p class="copyright esp12">
@@ -751,5 +758,26 @@
         <script src="js/lightbox-plus-jquery.min.js"></script>
         <script src="js/lightbox.min.js"></script>
         <script src="js/app.js"></script>
+        <script>
+            var chatbox = document.getElementById('fb-customer-chat');
+            chatbox.setAttribute("page_id", "434627763999457");
+            chatbox.setAttribute("attribution", "biz_inbox");
+
+            window.fbAsyncInit = function() {
+                FB.init({
+                xfbml            : true,
+                version          : 'v11.0'
+                });
+            };
+
+        (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+    
     </body>   
 </html>
